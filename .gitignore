@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Claude Code: personal settings, and the engine-generated types of the mod
+.claude/settings.local.json
+bif-studio/.claude-plugin/types/
+
+# Node (if tooling gets installed for the mod)
+node_modules/
+
+# Run output (normally in ~/.cache/bif-studio, kept out if ever written here)
+*.npz
+run-*.png
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

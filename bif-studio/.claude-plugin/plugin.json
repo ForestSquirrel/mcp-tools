@@ -1,0 +1,6 @@
+{
+  "name": "bif-studio",
+  "version": "0.1.0",
+  "description": "Bifurcation Studio: explore GPU bifurcation diagrams of an RHS file in a pane (/bif)",
+  "types": "./types/index.d.ts"
+}
