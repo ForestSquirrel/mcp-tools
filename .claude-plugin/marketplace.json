@@ -1,0 +1,14 @@
+{
+  "name": "mcp-tools",
+  "owner": {
+    "name": "ForestSquirrel"
+  },
+  "description": "Claude Code mods by ForestSquirrel",
+  "plugins": [
+    {
+      "name": "bif-studio",
+      "source": "./bif-studio",
+      "description": "Bifurcation Studio: explore GPU bifurcation diagrams and period maps of an RHS file in a pane (/bif)"
+    }
+  ]
+}

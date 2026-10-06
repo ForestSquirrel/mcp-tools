@@ -1,0 +1,5 @@
+mcp>=1.28
+numba>=0.65
+numpy>=2.0
+matplotlib>=3.9
+pillow>=11

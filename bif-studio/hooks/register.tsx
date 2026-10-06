@@ -349,7 +349,7 @@ async function checkWrittenRhs($: EngineInterface, file: string, content: string
   const loaded = await read($, rhsPath)
   const isLoaded = file === loaded
   // Other files only when they look like an RHS file (a Write that defines rhs).
-  if (!isLoaded && !(content !== undefined && /@cuda\.jit[\s\S]*def\s+rhs\s*\(/.test(content))) return null
+   if (!isLoaded && !(file.endsWith('.py') && content !== undefined && /@cuda\.jit[\s\S]*def\s+rhs\s*\(/.test(content))) return null
   try {
     const desc = isLoaded ? await load($, file) : ((await callServer($, 'describe', { path: file })) as Describe)
     return desc ? contractNote(desc, file, isLoaded) : null
